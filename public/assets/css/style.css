@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/* font-family: "Titillium Web", sans-serif; */
+
+:root {
+    --gradient1: linear-gradient(45deg, #f7b733, #fc4a1a);
+    --gradient2: linear-gradient(to bottom, #f5af19, #f12711);
+    --gradient3: linear-gradient(45deg, #ed8f03, #ffb75e);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: var(--gradient1);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+}
+@keyframes bg-animation {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+header {
+    /* width: 100%;
+  position: fixed; */
+    font-family: "Titillium Web", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    background-color: #f76e11;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffff;
+    opacity: 0.9;
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    display: block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.navbar li :hover {
+    color: #000;
+}
+
+/* nav end  */
+
+.main {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/foto-3.png);
+    background-repeat: round;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc1 {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    color: #ffff;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.desc1 p {
+    transition: 1.5s;
+}
+
+.desc1 p:hover {
+    cursor: pointer;
+    font-size: 35px;
+}
+/* main end  */
+
+.beranda {
+    margin: 20px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.desc2 {
+    text-align: justify;
+    width: 75%;
+}
+/* beranda end  */
+
+.qoute {
+    color: #ffff;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.komitmen {
+    padding: 5px;
+    margin: 10px auto;
+    grid-column: 1/-1;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    width: 550px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.komitmen:hover {
+    border-radius: 10px;
+    background-color: #ffb75e;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 35px;
+    height: 250px;
+    width: 550px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    border-radius: 10px;
+    background-color: #ffb75e;
+}
+/* card end  */
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f76e11;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.footer-bagian {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.foto-wikrama {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.foto-wikrama img {
+    width: 50%;
+    margin: auto;
+}
+.list-halaman {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-halaman ul li {
+    font-size: 20px;
+    list-style: none;
+    margin: 5px;
+}
+
+.list-halaman ul li a {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: 2s;
+}
+
+.list-halaman ul li a :hover {
+    color: #0000;
+}
+
+.kontak {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.kontak .alamat h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kontak .telepon h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* footer end */
+
+/* sejarah */
+.text-sejarah {
+    margin: 20px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Titillium Web", sans-serif;
+}
+/* kantin */
+.text-kantin {
+    margin: 15px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.desc-kantin {
+    margin-top: 20px;
+    width: 80%;
+    text-align: justify;
+}
+
+/* jurusan */
+.jurusan {
+    font-weight: bold;
+    color: #ffff;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+
+.jurusan a {
+    color: #fff;
+    /* opacity: 0.9; */
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.card-jurusan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 35px;
+    height: 250px;
+    width: 550px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card-jurusan:hover {
+    border-radius: 10px;
+    background-color: #ffb75e;
+    text-decoration: underline;
+}
+
+.rpl {
+    padding: 5px;
+    margin: 15px auto;
+    grid-column: 1/-1;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    width: 620px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.rpl a {
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.rpl a:hover {
+    text-decoration: underline;
+}
+
+.rpl:hover {
+    border-radius: 10px;
+    background-color: #ffb75e;
+}
